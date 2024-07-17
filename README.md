@@ -1,63 +1,66 @@
-<header>
-
 <!--
-  <<< Author notes: Course header >>>
-  Read <https://skills.github.com/quickstart> for more information about how to build courses using this template.
-  Include a 1280×640 image, course name in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Next to "About", add description & tags; disable releases, packages, & environments.
-  Add your open source license, GitHub uses the MIT license.
+  <<< Author notes: Step 4 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
 -->
 
-# Code with GitHub Copilot
+## Step 4: Using comments to generate code with Copilot
 
-_GitHub Copilot can help you code by offering autocomplete-style suggestions right in VS Code and Codespaces._
+_Nicely done utilizing the Copilot tab!_ :partying_face:
 
-</header>
+You now have leveraged the Copilot quick tab auto-suggest as well as the Copilot hub to accept AI generated suggestions.
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+Now lets see how you can leverage comments to generate Copilot suggestions!
 
-## Finish
+### :keyboard: Activity: Pull the latest code to the Codespace repo.
 
-_Congratulations friend, you've completed this course!_
+> **Note**
+> Pull MUST be done prior to the next activity.
 
-<img src="https://octodex.github.com/images/welcometocat.png" alt=celebrate width=300 align=right>
+1. Use the VS Code terminal to pull the latest code:
 
-Here's a recap of all the tasks you completed:
+   ```
+   git pull
+   ```
 
-- Set up Copilot inside a Codespace.
-- Use Copilot to accept suggested code.
-- Use Copilot's hub for alternate suggestions.
-- Leverage comments to have Copilot auto-suggest code.
+### :keyboard: Activity: Generate Copilot suggested code from comments.
 
-### Additional learning and resources
+1. From inside the codespace in the VS Code explorer window, create a new file. (If you closed the Codespace from above, please open it back up or create a new Codespace.)
+2. Name the file `comments.js`.
+3. Type the following comment into the file:
+   ```
+   // Create web server
+   ```
+4. Press `enter` to go to a new line.
+5. Copilot will suggest a code block.
+6. Hover over the red squiggly and select the `...`
 
-- [Copilot for Individuals](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-individuals)
-- [Copilot for Business](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-business)
-- [Getting started with Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-visual-studio-code)
-- [Configure Copilot settings](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-settings-on-githubcom)
+   > **Note**
+   > If you don't see the copilot code block suggestion or the red squiggly and the three dots `...`, you can type `control + enter` to bring up the GitHub Copilot completions panel.
 
-### What's next?
+7. Click `Open Completions Panel`. Copilot will synthesise around 10 different code suggestions. You should see something like this:
+   ![Screen Shot 2023-04-25 at 3 59 42 PM](https://user-images.githubusercontent.com/26442605/234425509-74ea96e0-bbd6-417b-84c5-73546ac7b2cd.png)
+8. Find a solution you like and click `Accept Solution`.
+9. Your `comments.js` file will be updated with your solution.
 
-- [We'd love to hear what you thought of this course](https://github.com/orgs/skills/discussions/categories/code-with-copilot).
-- [Learn another GitHub skill](https://github.com/skills).
-- [Read the Get started with GitHub docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+### :keyboard: Activity: Push code to your repository from the codespace
 
-<footer>
+1. Use the VS Code terminal to add the `comments.js` file to the repository:
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+   ```
+   git add comments.js
+   ```
 
----
+2. Next from the VS Code terminal stage and commit the changes to the repository:
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/code-with-copilot) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+   ```
+   git commit -m "Copilot third commit"
+   ```
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+3. Finally from the VS Code terminal push to code to the repository:
 
-</footer>
+   ```
+   git push
+   ```
+
+**Wait about 60 seconds then refresh your repository landing page for the next step.**
