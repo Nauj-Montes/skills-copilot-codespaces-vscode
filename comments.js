@@ -1,9 +1,4 @@
 // Create web server
-// Create comments array
-// Create comments route
-// Create comments post route
-// Create comments delete route
-// Create comments update route
 
 const express = require('express');
 const bodyParser = require('body-parser');
